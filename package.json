@@ -1,0 +1,24 @@
+{
+  "name": "toastify-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFluffyNebula/Toastify-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheFluffyNebula/Toastify-Test/issues"
+  },
+  "homepage": "https://github.com/TheFluffyNebula/Toastify-Test#readme",
+  "dependencies": {
+    "toastify-js": "^1.12.0",
+    "webpack": "^5.74.0"
+  }
+}
