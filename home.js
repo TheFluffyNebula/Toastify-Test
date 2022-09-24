@@ -1,10 +1,8 @@
-const success = document.querySelector('.success');
-const warning = document.querySelector('.warning');
-const info = document.querySelector('.info');
-
+const success = document.querySelector('#success');
+const warning = document.querySelector('#warning');
+const info = document.querySelector('#info');
 let toastContainer;
-
-function generateToast({
+async function generateToast({
   message,
   background = '#00214d',
   color = '#fffffe',
@@ -19,11 +17,9 @@ function generateToast({
   const toast = toastContainer.lastElementChild;
   toast.addEventListener('animationend', () => toast.remove())
 }
-
 (function initToast(){
   document.body.insertAdjacentHTML('afterbegin', `<div class="toast-container"></div>
   <style>
-  
 .toast-container {
   position: fixed;
   top: 1rem;
@@ -32,7 +28,6 @@ function generateToast({
   justify-items: end;
   gap: 1.5rem;
 }
-
 .toast {
   font-size: 1.5rem;
   font-weight: bold;
@@ -41,7 +36,6 @@ function generateToast({
   background-color: lightblue;
   animation: toastIt 3000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
 }
-
 @keyframes toastIt {
   0%,
   100% {
