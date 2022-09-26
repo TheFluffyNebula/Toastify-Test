@@ -1,6 +1,8 @@
-const success = document.querySelector('#success');
-const warning = document.querySelector('#warning');
-const info = document.querySelector('#info');
+import{
+  success,
+  warning,
+  info,
+} from './ui';
 let toastContainer;
 async function generateToast({
   message,
